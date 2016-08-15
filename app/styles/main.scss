@@ -4,6 +4,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "font-awesome/scss/font-awesome.scss";
 // endbower
 
+$blue: #141a5f;
+$lt-blue: #cde6ee;
+
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
@@ -70,16 +73,22 @@ body {
 
 .icon{
     padding: 20px;
+    color: $blue;
 }
 #about {
   height: 700px;
-  padding-top: 100px; }
+  padding-top: 20px; }
 
 #skills {
   background-color: #182257;
   color: white;
   height: auto;
-  min-height: 700px; }
+  min-height: 700px; 
+    padding-top: 40px;
+}
+.skillsIcons{
+    padding-top: 60px;
+}
 
 .col-md-15 {
   width: 20%; }
@@ -87,6 +96,19 @@ body {
 .pTitle {
     padding-top: 20px;
 }
+#projects, #contact {
+    padding-top: 40px;
+}
+
+/*.projectItem{
+    background-color: $lt-blue;
+  
+    border-color: antiquewhite;
+    border-radius: 25px;
+    padding-bottom: 40px;
+    border: 30px;
+  
+}*/
 
 #innerContact {
   background-color: beige;
@@ -110,5 +132,30 @@ body {
 #contactSub {
   color: #313B74; }
 
-.tools{padding-bottom: 100px;}
+/*.tools{padding-bottom: 100px;}*/
+
+.intro-header {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 100px; }
+
+
+.divider {
+    border-color: $blue;
+    border-style: solid;
+    border-width: 0 0 3px;
+    height: 10px;
+    line-height: 20px;
+    text-align:center;
+    overflow: visible;
+}
+
+.divider span {
+    background-color: $blue;
+    display: inline-block;
+    padding: 0 10px;
+    min-height: 20px;
+    min-width: 10%;
+}
+
 
