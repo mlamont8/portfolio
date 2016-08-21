@@ -1,0 +1,5 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/mlamont8/projects/ang-portfolio/bower_components/jquery/dist/core.js"
+    ]
+}
