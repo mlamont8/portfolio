@@ -18,6 +18,7 @@ angular
     'ngTouch'
   ])
   .config(function ($locationProvider,$stateProvider, $urlRouterProvider) {
+    $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('home', {
@@ -35,8 +36,8 @@ angular
             'contact@home': {templateUrl: 'views/contact.html'}
         }
     });
-  })
-.directive("scroll", function ($window) {
+  });
+/*.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind("scroll", function() {
              if (this.pageYOffset >= 50) {
@@ -47,6 +48,6 @@ angular
             scope.$apply();
         });
     };
-}); 
+}); */
 
 

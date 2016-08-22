@@ -1,7 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "font-awesome/scss/font-awesome.scss";
 // endbower
 
 $blue: #141a5f;
@@ -79,16 +78,16 @@ body {
     padding: 20px;
     color: $blue;
 }
-#about {
+#about, {
   height: 700px;
-  padding-top: 20px; }
+  padding-top: 80px; }
 
 #skills {
   background-color: #182257;
   color: white;
   height: auto;
   min-height: 700px; 
-    padding-top: 40px;
+  padding-top: 80px;
 }
 .skillsIcons{
     padding-top: 60px;
@@ -100,19 +99,10 @@ body {
 .pTitle {
     padding-top: 20px;
 }
-#projects, #contact {
-    padding-top: 40px;
+#contact, #projects {
+    padding-top: 80px;
 }
 
-/*.projectItem{
-    background-color: $lt-blue;
-  
-    border-color: antiquewhite;
-    border-radius: 25px;
-    padding-bottom: 40px;
-    border: 30px;
-  
-}*/
 
 #innerContact {
   background-color: beige;
@@ -136,7 +126,7 @@ body {
 #contactSub {
   color: #313B74; }
 
-/*.tools{padding-bottom: 100px;}*/
+
 
 .intro-header {
   font-size: 50px;
@@ -160,6 +150,10 @@ body {
     padding: 0 10px;
     min-height: 20px;
     min-width: 10%;
+}
+
+.sect{
+  padding-top: 20px;
 }
 
 
