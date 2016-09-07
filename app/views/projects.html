@@ -19,10 +19,10 @@
           <div class="row text-center">
                 <img class="img-responsive img-rounded center-block pImg" ng-src='{{item.image}}'>
                 <div class="pIcon">
-                    <a href="https://github.com/mlamont8/local-weather"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                    <a href="{{item.github}}"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
                 </div>
-                <p class="descript lead well col-md-8 col-md-offset-2">Makes use of the API from OpenWeatherMap.com and uses geolocation information from the browser to output current weather conditions in user's location.  Includes a Celsius/Fahrenheit toggle, background images change based on current weather conditions.</p>
-                <p class="tools col-md-8 col-md-offset-2">HTML5|Bootstrap|CSS|jQuery</p>
+                <p class="descript lead well col-md-8 col-md-offset-2">{{item.desc}}</p>
+                <p class="tools col-md-8 col-md-offset-2">{{item.tech}}</p>
                 
             </div>   
             
