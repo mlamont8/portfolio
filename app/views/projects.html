@@ -13,21 +13,23 @@
         
         <!--ngrepeat row-->
         
-        <div ng-repeat="item in projectsList.data">
-        <div class="row text-center  projectItem">
-         <h2 class="pTitle">{{item.title | uppercase}}</h2>
-          <div class="row text-center">
-                <img class="img-responsive img-rounded center-block pImg" ng-src='{{item.image}}'>
-                <div class="pIcon">
-                    <a href="{{item.github}}"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+        <div ng-repeat="item in projectsList.data" class="rowItem">
+        <div class="row projectItem">
+         
+      
+                <img class="img-responsive col-md-5 pImg" ng-src='{{item.image}}'>
+    <!--             <div class="pIcon">
+        <a href="{{item.github}}"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    </div> -->
+                <div class="col-md-5 col-md-offset-2">
+   <!--              <h2 class="pTitle">{{item.title | uppercase}}</h2> -->
+                <p class="descript lead well">{{item.desc}}</p>
+                <p class="tools">{{item.tech}}</p>
                 </div>
-                <p class="descript lead well col-md-8 col-md-offset-2">{{item.desc}}</p>
-                <p class="tools col-md-8 col-md-offset-2">{{item.tech}}</p>
-                
             </div>   
             
-            </div>
+            
         </div>
-    </div>
+   
     
 </section>

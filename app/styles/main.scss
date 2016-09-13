@@ -95,11 +95,12 @@ body {
 #about, {
   height: 700px;
   padding-top: 80px;
-background-color: $major;
+background-color: $alt;
+color: $major;
    }
 
 #skills {
-  background-color: $alt;
+  background-color: $major;
   color: white;
   height: auto;
   min-height: 700px; 
@@ -107,6 +108,9 @@ background-color: $major;
 }
 #projects{
   background-color: $major;
+}
+#contact{
+  background-color: $alt;
 }
 .skillsIcons{
     padding-top: 60px;
@@ -124,7 +128,7 @@ background-color: $major;
 
 
 #innerContact {
-  background-color: beige;
+  background-color: $white;
   background-image: url(/images/map.png);
   background-repeat: no-repeat;
   height: 400px;
@@ -137,7 +141,7 @@ background-color: $major;
 
 .contact-heading {
   padding-top: 120px;
-  color: #000000; }
+  color: $major; }
 
 .contact-link {
   padding: 10px; }
@@ -148,9 +152,13 @@ background-color: $major;
 
 
 .intro-header {
-  font-size: 50px;
+  font-size: 15px;
   font-weight: 700;
-  padding-top: 100px; }
+  padding-top: 100px; 
+  position: absolute;
+  bottom: 230px;
+  right: 160px;
+}
 
 
 .divider {
@@ -186,4 +194,12 @@ background-color: $major;
 
 .descript{
   color: $major
+}
+
+.projectItem{
+  padding:80px 0 80px 0;
+}
+
+.rowItem{
+  border-bottom: 1px solid #515151;
 }
