@@ -3,8 +3,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-$blue: #141a5f;
-$lt-blue: #cde6ee;
+$major: #30231d;
+$minor: #cde6ee;
+$white: #f6f1ed;
+$alt: #b5a397;
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -54,13 +56,25 @@ body{
 
 body {
   padding: 0;
+  color: $white;
+}
+
+.img-responsive {
+  border-color: $white;
+  border: 1px solid;
+  border-radius: 4px;
+
+}
+.navbar-default{
+  background-color: $major;
+  border-color: $white;
 }
 
 .home {
-    background: url("/images/header.png") no-repeat center center fixed;
+    background: url("/images/sackcloth.png") no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    
     height: 700px;
     padding-top: 150px;
     position: relative;
@@ -76,18 +90,23 @@ body {
 
 .icon{
     padding: 20px;
-    color: $blue;
+    color: $white;
 }
 #about, {
   height: 700px;
-  padding-top: 80px; }
+  padding-top: 80px;
+background-color: $major;
+   }
 
 #skills {
-  background-color: #182257;
+  background-color: $alt;
   color: white;
   height: auto;
   min-height: 700px; 
   padding-top: 80px;
+}
+#projects{
+  background-color: $major;
 }
 .skillsIcons{
     padding-top: 60px;
@@ -135,7 +154,7 @@ body {
 
 
 .divider {
-    border-color: $blue;
+    border-color: $major;
     border-style: solid;
     border-width: 0 0 3px;
     height: 10px;
@@ -145,7 +164,7 @@ body {
 }
 
 .divider span {
-    background-color: $blue;
+    background-color: $major;
     display: inline-block;
     padding: 0 10px;
     min-height: 20px;
@@ -156,4 +175,15 @@ body {
   padding-top: 20px;
 }
 
+#clients .fa, 
+.icon-javascript,
+.icon-apache,
+.icon-ubuntu,
+.icon-mysql
+ {
+  color: $major;
+}
 
+.descript{
+  color: $major
+}
