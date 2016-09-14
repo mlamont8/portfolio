@@ -1,10 +1,10 @@
 <section class="sect" id="projects">
     <div class="container text-center">
         <div class="row">
+            <!-- Header -->
             <div class="col-lg-12 text-center">
                 <h2 class="section-header">PROJECTS</h2>
-                
-            </div>
+                </div>
             <div class="col-lg-12 text-center" id="compIcon">
                 <i class="fa fa-laptop fa-4x" aria-hidden='true'></i>
             </div>
@@ -15,15 +15,13 @@
         
         <div ng-repeat="item in projectsList.data" class="rowItem">
         <div class="row projectItem">
-         
-      
-                <img class="img-responsive col-md-5 pImg" ng-src='{{item.image}}'>
-    <!--             <div class="pIcon">
-        <a href="{{item.github}}"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-    </div> -->
-                <div class="col-md-5 col-md-offset-2">
-   <!--              <h2 class="pTitle">{{item.title | uppercase}}</h2> -->
-                <p class="descript lead well">{{item.desc}}</p>
+         <!-- Add ng-class-even for alternating sides on rows -->
+                <div class="col-md-6" ng-class-even="'col-md-push-6'" >
+                <img class="img-responsive pImg"ng-src='{{item.image}}'>
+                </div>
+                  <div class="col-md-6" ng-class-even= "'col-md-pull-6'">
+
+                <p class="descript lead">{{item.desc}}</p>
                 <p class="tools">{{item.tech}}</p>
                 </div>
             </div>   
