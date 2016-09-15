@@ -9,7 +9,7 @@ $white: #f6f1ed;
 $alt: #b5a397;
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .col-xs-15,
@@ -27,25 +27,7 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-@media (min-width: 768px) {
-.col-sm-15 {
-        width: 100%;
-        margin-right: auto;
-    margin-left: auto;
-    }
-}
-@media (min-width: 992px) {
-    .col-md-15 {
-        width: 20%;
-        float:left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-15 {
-        width: 20%;
-        float: left;
-    }
-}
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -57,6 +39,7 @@ body{
 body {
   padding: 0;
   color: $white;
+  font-size: 19px;
 }
 
 .img-responsive {
@@ -70,6 +53,14 @@ body {
   background-color: $major;
   border-color: $white;
   padding: 0;
+}
+.welcome-title{
+  font-size: 36px;
+  font-weight: 600px;
+}
+.welcome-subtitle{
+  font-size: 24px;
+  font-weight: 500px;
 }
 
 .home {
@@ -155,8 +146,7 @@ color: $major;
 
 
 .intro-header {
-  font-size: 15px;
-  font-weight: 700;
+ 
   position: absolute;
   bottom: 160px;
   right: 160px;
@@ -210,4 +200,9 @@ color: $major;
    background: transparent none repeat scroll 0 0 !important;
     margin-bottom: 25px;
     width: 500px;
+}
+.fa-github,
+.fa-external-link{
+  padding: 10px;
+  color: $white;
 }

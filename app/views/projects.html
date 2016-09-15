@@ -15,7 +15,7 @@
         
         <div ng-repeat="item in projectsList.data" class="rowItem">
         <div class="row projectItem">
-         <!-- Add ng-class-even for alternating sides on rows -->
+         <!-- ng-class-even for alternating sides on rows -->
                 <div class="col-md-6" ng-class-even="'col-md-push-6'" >
                 <img class="img-responsive pImg"ng-src='{{item.image}}'>
                 </div>
@@ -23,6 +23,7 @@
 
                 <p class="descript lead">{{item.desc}}</p>
                 <p class="tools">{{item.tech}}</p>
+                <a ng-href="{{item.github}}" target="_blank"><i class="fa fa-github fa-2x"></i></a><a ng-href="{{item.link}}" target="_blank"><i class="fa fa-external-link fa-2x"></i></a>
                 </div>
             </div>   
             

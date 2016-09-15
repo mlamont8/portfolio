@@ -29,8 +29,6 @@ angular
             'header@home': {templateUrl: 'views/header.html',
                            controller: 'headerController as headerList'},
             'about@home': {templateUrl: 'views/about.html'},
-            'skills@home': {templateUrl: 'views/skills.html',
-                           controller: 'skillsController as skillsList'},
             'projects@home': {templateUrl: 'views/projects.html',
                              controller:'projectsController as projectsList'},
             'contact@home': {templateUrl: 'views/contact.html'}
