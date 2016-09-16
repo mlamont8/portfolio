@@ -15,7 +15,9 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'smoothScroll',
+    'ui.bootstrap'
   ])
   .config(function ($locationProvider,$stateProvider, $urlRouterProvider) {
     $locationProvider.html5Mode(true);
@@ -25,27 +27,19 @@ angular
         url: '/',
         views: {
             '': {templateUrl: '/views/main.html'},
-            'nav@home': {templateUrl: 'views/nav.html'},
+            'nav@home': {templateUrl: 'views/nav.html',
+                          controller: 'navController as navList'},
             'header@home': {templateUrl: 'views/header.html',
                            controller: 'headerController as headerList'},
+
             'about@home': {templateUrl: 'views/about.html'},
+
             'projects@home': {templateUrl: 'views/projects.html',
                              controller:'projectsController as projectsList'},
+
             'contact@home': {templateUrl: 'views/contact.html'}
         }
     });
   });
-/*.directive("scroll", function ($window) {
-    return function(scope, element, attrs) {
-        angular.element($window).bind("scroll", function() {
-             if (this.pageYOffset >= 50) {
-                 scope.boolChangeClass = true;
-             } else {
-                 scope.boolChangeClass = false;
-             }
-            scope.$apply();
-        });
-    };
-}); */
 
 

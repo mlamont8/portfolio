@@ -86,10 +86,12 @@ body {
     color: $white;
 }
 #about, {
-  height: 700px;
+  // height: 700px;
   padding-top: 80px;
+  padding-bottom: 180px;
 background-color: $alt;
 color: $major;
+// overflow: auto;
    }
 
 #skills {
