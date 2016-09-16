@@ -10,6 +10,11 @@ $alt: #b5a397;
 
 body{
     font-family: 'Josefin Sans', sans-serif;
+      /* Margin bottom by footer height */
+  margin-bottom: 60px;
+   padding: 0;
+  color: $white;
+  font-size: 19px;
 }
 
 .col-xs-15,
@@ -36,11 +41,6 @@ body{
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
-  color: $white;
-  font-size: 19px;
-}
 
 .img-responsive {
   border-color: $white;
@@ -208,3 +208,30 @@ color: $major;
   padding: 10px;
   color: $white;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: $major;
+  overflow: auto;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.copyright,
+.credits
+p{
+  padding-top: 15px;
+  font-size: 16px;
+}
+.contact-icons img {
+  height: 40px;
+  border: 10px;
+
+}
+
