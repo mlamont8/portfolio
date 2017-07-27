@@ -6,6 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $major: #30231d;
 $minor: #cde6ee;
 $white: #f2f2f2;
+$black: #1b1b1b;
 $alt: #b5a397;
 
 $darkblue: #16193b;
@@ -96,12 +97,19 @@ body{
     color: $white;
 }
 #about, {
-  // height: 700px;
+  background:
+/* top, transparent black, faked with gradient */
+linear-gradient(
+rgba(0, 0, 0, 0.8),
+rgba(0, 0, 0, 0.8)
+),
+   url("/images/office.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
   padding-top: 80px;
   padding-bottom: 180px;
-background-color: $alt;
-color: $major;
-// overflow: auto;
+  background-color: $black;
+  color: $white;
    }
 
 #skills {
