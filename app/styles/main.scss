@@ -5,8 +5,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 $major: #30231d;
 $minor: #cde6ee;
-$white: #f6f1ed;
+$white: #f2f2f2;
 $alt: #b5a397;
+
+$darkblue: #16193b;
 
 body{
     font-family: 'Josefin Sans', sans-serif;
@@ -46,11 +48,11 @@ body{
   border-color: $white;
   border: 1px solid;
 
- 
+
 
 }
 .navbar-default{
-  background-color: $major;
+  background-color: $darkblue;
   border-color: $white;
   padding: 0;
 }
@@ -66,10 +68,11 @@ body{
 }
 
 .home {
-    background: url("/images/sackcloth.png") no-repeat center center fixed;
+  // background: url("/images/sackcloth.png") no-repeat center center fixed;
+    background: url("/images/header-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
-    
+
     height: 700px;
     padding-top: 150px;
     position: relative;
@@ -100,7 +103,7 @@ color: $major;
   background-color: $major;
   color: white;
   height: auto;
-  min-height: 700px; 
+  min-height: 700px;
   padding-top: 80px;
 }
 #projects{
@@ -150,7 +153,7 @@ color: $major;
 
 
 .intro-header {
- 
+
   position: absolute;
   bottom: 160px;
   right: 160px;
@@ -182,7 +185,7 @@ color: $major;
   padding-top: 20px;
 }
 
-#clients .fa, 
+#clients .fa,
 .icon-javascript,
 .icon-apache,
 .icon-ubuntu,
@@ -236,4 +239,3 @@ p{
   border: 10px;
 
 }
-
