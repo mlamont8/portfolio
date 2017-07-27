@@ -8,11 +8,11 @@
             <div class="col-lg-12 text-center" id="compIcon">
                 <i class="fa fa-laptop fa-4x" aria-hidden='true'></i>
             </div>
-            
+
         </div>
-        
+
         <!--ngrepeat row-->
-        
+
         <div ng-repeat="item in projectsList.data" class="rowItem">
         <div class="row projectItem">
          <!-- ng-class-even for alternating sides on rows -->
@@ -23,12 +23,13 @@
 
                 <p class="descript lead">{{item.desc}}</p>
                 <p class="tools">{{item.tech}}</p>
-                <a ng-href="{{item.github}}" target="_blank"><i class="fa fa-github fa-2x"></i></a><a ng-href="{{item.link}}" target="_blank"><i class="fa fa-external-link fa-2x"></i></a>
+                <a ng-href="{{item.github}}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                <a ng-href="{{item.link}}" target="_blank"><i class="fa fa-external-link fa-2x"></i></a>
                 </div>
-            </div>   
-            
-            
+            </div>
+
+
         </div>
-   
-    
+
+
 </section>

@@ -59,7 +59,6 @@ body{
 }
 .navbar-default{
   background-color: $darkblue;
-  border-color: $white;
   padding: 0;
 }
 .welcome-title{
@@ -124,7 +123,7 @@ body{
   color: $white;
 }
 #contact{
-  background-color: $alt;
+  background-color: $blue1;
 }
 .skillsIcons{
     padding-top: 60px;
@@ -138,6 +137,14 @@ body{
 }
 #contact, #projects {
     padding-top: 80px;
+}
+
+.mainDivider {
+    display: block;
+    margin: 50px;
+    width: 80%;
+    height: 2px;
+    background-color: $blue1;
 }
 
 
@@ -155,7 +162,7 @@ body{
 
 .contact-heading {
   padding-top: 120px;
-  color: $major; }
+  color: $darkblue; }
 
 .contact-link {
   padding: 10px; }
@@ -170,7 +177,7 @@ body{
   position: absolute;
   bottom: 160px;
   right: 160px;
-  color: $major;
+  color: $darkblue;
   background-color: $alt;
   opacity: .8;
 }
@@ -204,7 +211,7 @@ body{
 .icon-ubuntu,
 .icon-mysql
  {
-  color: $major;
+  color: $darkblue;
 }
 
 
@@ -233,7 +240,7 @@ body{
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: $major;
+  background-color: $darkblue;
   overflow: auto;
 }
 html {
