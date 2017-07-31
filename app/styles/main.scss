@@ -15,6 +15,17 @@ $blue2: #4E7AC7;
 $blue3: #7fb2f0;
 $blue4: #add5f7;
 
+@keyframes pulse
+ {
+  0%{
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+}
+
 
 body{
     font-family: 'Josefin Sans', sans-serif;
@@ -245,6 +256,11 @@ body{
   padding:80px 0 80px 0;
 }
 
+
+.projectLink:hover {
+  animation: pulse .5s infinite alternate;
+}
+
 .rowItem{
   border-bottom: 1px solid #515151;
 }
@@ -280,8 +296,14 @@ p{
   padding-top: 15px;
   font-size: 16px;
 }
-.contact-icons img {
+.contactButton {
   height: 40px;
   border: 10px;
+  margin: 10px;
 
+}
+
+
+.contactButton:hover {
+  animation: pulse .5s infinite alternate;
 }
