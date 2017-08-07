@@ -72,19 +72,23 @@ body{
   background-color: $darkblue;
   padding: 0;
 }
-.welcome-title{
-  font-size: 36px;
-  font-weight: 700px;
+.title-container {
+  padding-top: 80px;
 }
-.welcome-subtitle,
-.welcome-text
+.welcome-title{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+.welcome-subtitle
 {
-  font-size: 24px;
-  font-weight: 700px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 60px;
+  animation: fadeInUp 3s .5s both;
 }
 
 .home {
-  // background: url("/images/sackcloth.png") no-repeat center center fixed;
     background: url("/images/header-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
@@ -104,13 +108,20 @@ body{
   .title-divider{
     background-color: #f2f2f2;
     height: 2px;
+    animation: spreadOut 1s .5s both;
+    // padding: 40px 0 40px 0;
   }
 
-  .title-divider, .subtitle {
-    /*animation-delay: .5s;
-    animation-duration: 1s;
-    animation-fill-mode: both;*/
-    animation: fadeInUp 1s .5s both;
+
+  @keyframes spreadOut {
+    0% {
+      opacity: 0;
+      transform: scaleX(0);
+      }
+    100% {
+        opacity: 1;
+        transform: scaleX(3);
+      }
   }
 
   @keyframes fadeInUp {
