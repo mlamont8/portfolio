@@ -14,6 +14,8 @@ $blue1: #35478c;
 $blue2: #4E7AC7;
 $blue3: #7fb2f0;
 $blue4: #add5f7;
+$playfair: 'Playfair Display', serif;
+$crimson-text: 'Crimson Text', serif;
 
 @keyframes pulse
  {
@@ -33,7 +35,7 @@ body{
   margin-bottom: 60px;
    padding: 0;
   color: $white;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .col-xs-15,
@@ -76,14 +78,14 @@ body{
   padding-top: 80px;
 }
 .welcome-title{
-  font-size: 40px;
-  font-weight: 900;
+  font-family: $playfair;
+  font-size: 72px;
   margin-bottom: 60px;
 }
 .welcome-subtitle
 {
   font-size: 30px;
-  font-weight: 700;
+  font-family: $crimson-text;
   padding-top: 60px;
   animation: fadeInUp 3s .5s both;
 }
@@ -136,7 +138,9 @@ body{
   }
 
   .title-logo{
-    padding-top: 150px;
+    // padding-top: 100px;
+    padding-bottom: 70px;
+    animation: fadeInUp 3s .5s both;
   }
 
 .icon{
@@ -157,6 +161,13 @@ body{
   padding-bottom: 180px;
   background-color: $black;
   color: $white;
+   }
+   .about-intro {
+     font-family: $crimson-text;
+   }
+
+   .portrait {
+      border: 2px solid darkgray;
    }
 
 #skills {
